@@ -1,0 +1,20 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: yurafedorenko721@gmail.com
+    password: gclgcocxiyxslnhf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+server:
+  port: 8080
+app:
+  suggestions:
+    url: https://glosbe.com/ajax/phrasesAutosuggest
+  mail:
+    subject: test
