@@ -19,6 +19,7 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-mail")
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("ch.qos.logback:logback-core")
     implementation("net.logstash.logback:logstash-logback-encoder:6.3")
 
