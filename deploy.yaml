@@ -58,7 +58,7 @@ metadata:
   labels:
     tier: suggestions
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       tier: suggestions
@@ -90,10 +90,10 @@ spec:
             periodSeconds: 3
           resources:
             limits:
-              memory: "256Mi"
+              memory: "512Mi"
               cpu: "200m"
             requests:
-              memory: "128Mi"
+              memory: "256Mi"
               cpu: "50m"
 
 ---
@@ -105,7 +105,7 @@ metadata:
   labels:
     tier: gateway
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       tier: gateway
@@ -143,8 +143,8 @@ spec:
               protocol: TCP
           resources:
             limits:
-              memory: "256Mi"
-              cpu: "200m"
+              memory: "512Mi"
+              cpu: "300m"
             requests:
-              memory: "128Mi"
+              memory: "256Mi"
               cpu: "50m"

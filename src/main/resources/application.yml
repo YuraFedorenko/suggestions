@@ -7,9 +7,9 @@ spring:
     properties:
       mail:
         smtp:
-          auth: true
+          auth: false
           starttls:
-            enable: true
+            enable: false
     protocol: smtp
 server:
   port: 8080
