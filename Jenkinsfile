@@ -4,18 +4,18 @@ pipeline {
     stages {
         stage('Compile Stage') {
             steps {
-                 withGradle {
-                          sh 'gradle compileKotlin'
-                 }
+                 gradlew('compileKotlin')
             }
         }
 
         stage('Testing stage') {
             steps {
-                 withGradle) {
-                          sh 'compileTestKotlin'
-                 }
+                 gradlew('compileTestKotlin')
             }
         }
     }
+}
+
+def gradlew(String... args) {
+    sh "gradle ${args.join(' ')} -s"
 }
