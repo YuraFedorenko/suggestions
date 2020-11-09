@@ -12,10 +12,10 @@ pipeline {
 
         stage('Testing stage') {
             steps {
-                  withGradle(gradle : 'gradle_6_7') {
-                           sh 'compileTestKotlin'
-                  }
-                        }
+                 withGradle(gradle : 'gradle_6_7') {
+                          sh 'compileTestKotlin'
+                 }
+            }
         }
     }
 }
