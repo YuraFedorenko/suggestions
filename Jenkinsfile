@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Compile Stage') {
             steps {
-                 withGradle(gradle : 'gradle_6_7') {
+                 withGradle {
                           sh 'gradle compileKotlin'
                  }
             }
@@ -12,7 +12,7 @@ pipeline {
 
         stage('Testing stage') {
             steps {
-                 withGradle(gradle : 'gradle_6_7') {
+                 withGradle) {
                           sh 'compileTestKotlin'
                  }
             }
